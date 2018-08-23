@@ -2,7 +2,7 @@
 
 
 .nav{
-background-color: #8FC0A9;
+background-color: #E4572E;
     
 }
 
@@ -13,7 +13,8 @@ background-color: #8FC0A9;
 
 .container {
 
-margin-left: 0;
+margin-left: 0px;
+margin-right: 0px,
 }
 
 .navbartxt{
@@ -24,5 +25,10 @@ font-family: 'Kosugi', sans-serif;
 .card{
     display:inline-flex;
     text-align: center;
-    
+  
     }
+
+    .but-Search{
+        background-color: #F0F8EA;
+        
+        }

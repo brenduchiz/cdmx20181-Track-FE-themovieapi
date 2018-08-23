@@ -25,25 +25,27 @@ console.log(moviesKey)
 
 
           Printposter+=`
-             
- <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="${allMovies.Poster}" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">${allMovies.Title}</h5>
-   
- <!-- Button trigger modal -->
+
+
+          <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="${allMovies.Poster}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">${allMovies.Title}</h5>
+           
+            <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#${allMovies.imdbID}">
  +Info
 </button>
-</div>
-</div>   
+          </div>
+        </div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="${allMovies.imdbID}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">${allMovies.Title}</h5>
+        <h7 class="modal-title" id="exampleModalLabel">${allMovies.Title}</h7>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
