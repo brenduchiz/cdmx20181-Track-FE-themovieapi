@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Kosugi');
+
+
+.nav{
+background-color: #8FC0A9;
+    
+}
+
+ .button-select {
+        background-color: #A1E887;
+            
+        }
+
+.container {
+
+margin-left: 0;
+}
+
+.navbartxt{
+color: white;
+font-family: 'Kosugi', sans-serif;
+}
+
+.card{
+    display:inline-flex;
+    text-align: center;
+    
+    }
