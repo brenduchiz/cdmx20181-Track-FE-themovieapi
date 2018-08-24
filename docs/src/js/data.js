@@ -1,32 +1,20 @@
-
-
 const getMovies = url => fetch(url).then(response => response.json());
-const getFilter = url => fetch(url).then(response => response.json());
 
+document.getElementById('movies').addEventListener('change', () => {
+  const movies = document.getElementById('movies').value;
+  let Printposter = '';
 
+  getMovies(`http://www.omdbapi.com/?s=${movies}&apikey=51976a0e`)
+    .then((resultados) => {
+      console.log(resultados.Search);
 
+      for (let i = 0; i < resultados.Search.length; i++) {
+        const allMovies = resultados.Search[i];
 
+        console.log(allMovies);
 
-document.getElementById("movies").addEventListener("change",function(){
-    let Printposter ="";
-    let moviesKey=movies.value;
-console.log(moviesKey)
-
-    getMovies(`http://www.omdbapi.com/?s=${moviesKey}&apikey=51976a0e`)
-    .then(function(resultados){
-
-
-        console.log(resultados.Search);
-
-        for (let i = 0; i < resultados.Search.length; i++) {
-             allMovies =resultados.Search[i];
-          
-          console.log(allMovies)
-
-
-          Printposter+=`
-
-
+        Printposter
+     += `
           <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="${allMovies.Poster}" alt="Card image cap">
           <div class="card-body">
@@ -38,8 +26,6 @@ console.log(moviesKey)
 </button>
           </div>
         </div>
-
-
 <!-- Modal -->
 <div class="modal fade" id="${allMovies.imdbID}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -56,46 +42,31 @@ console.log(moviesKey)
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        
       </div>
     </div>
   </div>
-</div>
+</div>    `;
 
-
-
-
-     
-          `;
-
-poster.innerHTML=Printposter;
-
-
-        }
-
-        
-       
-
-
-    })
+        poster.innerHTML = Printposter;
+      }
+    });
 });
 
-document.getElementById("button-Search").addEventListener("click",function(){
-    let Printposter ="";
-    let SearchMovie = document.getElementById("Search").value
+document.getElementById('button-Search').addEventListener('click', () => {
+  let Printposter = '';
+  const SearchMovie = document.getElementById('Search').value;
 
-    getMovies(`http://www.omdbapi.com/?s=${SearchMovie}&apikey=51976a0e`)
-    .then(function(resultados){
+  getMovies(`http://www.omdbapi.com/?s=${SearchMovie}&apikey=51976a0e`)
+    .then((resultados) => {
+      console.log(resultados.Search);
 
-console.log(resultados.Search);
+      for (let i = 0; i < resultados.Search.length; i++) {
+        const allMovies = resultados.Search[i];
 
-for (let i = 0; i < resultados.Search.length; i++) {
-    allMovies =resultados.Search[i];
- 
- console.log(allMovies)
+        console.log(allMovies);
 
 
- Printposter+=`
+        Printposter += `
     
 <div class="card" style="width: 18rem;">
 <img class="card-img-top" src="${allMovies.Poster}" alt="Card image cap">
@@ -126,32 +97,13 @@ for (let i = 0; i < resultados.Search.length; i++) {
 </div>
 <div class="modal-footer">
 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-
 </div>
 </div>
 </div>
 </div>
-
-
-
-
-
  `;
-
-poster.innerHTML=Printposter;
-
-
-}
-
-
-
-
-
-
-
-
-
-    })
-
+        const poster = document.getElementById('poster');
+        poster.innerHTML = Printposter;
+      }
+    });
 });
-
