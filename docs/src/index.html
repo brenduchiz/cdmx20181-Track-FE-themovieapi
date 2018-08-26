@@ -11,7 +11,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg nav ">
-        <img src="images/logoo.png" height="50" width="50" alt="">     <a class="navbartxt" id="" href="#"> SUPERHEROES </a>
+        <img src="images/logoo.png" height="50" width="50" alt="">     <a class="navbartxt title"  href="#"> SUPERHEROES </a>
          
       
         
@@ -19,62 +19,43 @@
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
            <ul class="navbar-nav mr-auto">
               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    MOVIES
+                  <a class="nav-link dropdown-toggle text-white " href="#" id="welcome" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Bienvenido
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="movies2">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
+
+               
+
+                   <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="movies2">
+                   
                     <a class="dropdown-item" href="#" id="singOut"  >Cerrar Sesión</a>
                   </div>
                 </li> 
               
-               
+                <li class="nav-item active">
+                    <select class="form-control button-select " id="movies">
+                        <option>Películas</option>
+                        <option>batman</option>
+                        <option>wonder woman</option>
+                        <option>superman</option>
+                        </select>
+                  </li>
            </ul>
-           <div class="form-inline my-2 my-lg-0"></form>
-             <input class="form-control mr-sm-2 but-Search" type="search" placeholder="Search"  id="Search" aria-label="Search">
-             <button class="btn btn-outline-dark my-2 my-sm-0 but-Search" id="button-Search" type="submit">Search</button>
+
+          
+           
+           <div class="form-inline my-2 my-lg-0">
+             <input class="form-control mr-sm-2 but-Search" type="search" placeholder=""  id="Search" aria-label="Search">
+             <button class="btn btn-outline-dark my-2 my-sm-0 but-Search" id="button-Search" type="submit">Buscar</button>
            </div>
          </div>
        </nav>
 
 
-
-
-
-
-
-
-
-
-
-    
-      <div class="container">
-      <div class="row">
-          <div class=" col-lg-2">
-              <label for="exampleFormControlSelect1">¿Qué veras hoy?</label>
-              <select class="form-control button-select " id="movies">
-                  <option>Películas</option>
-                  <option>batman</option>
-                  <option>wonder woman</option>
-                  <option>superman</option>
-                  </select>
-          </div>
-          <div class="col-md-auto">
-           
-          </div>
-          <div class="col col-lg-2">
-
-          </div>
-        </div>
-
+<div class="container">
+      
        
              <div id="poster"></div>
-            
-
-
-
+          
         
       </div>
 

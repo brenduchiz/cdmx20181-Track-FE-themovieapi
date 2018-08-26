@@ -6,15 +6,37 @@ background-color: #CE1E1E;
     
 }
 
- .button-select {
-        background-color: #A1E887;
-            
-        }
+.title {
+padding-left: 20px;
+
+}
+
+#welcome{
+padding-left: 20px;
+    
+}
+
+
+#movies {
+    background: transparent;
+    border: none;
+    height: 30px;
+    color: white;
+    width: 110px;
+  margin-top: 2px;
+ }
+
+
+
+ #movies option{
+    
+    color: black;
+ }
 
 .container {
 
-margin-left: 0px;
-margin-right: 0px,
+margin: 0px;
+max-width: 3000px;
 }
 
 .navbartxt{
@@ -25,10 +47,27 @@ font-family: 'Kosugi', sans-serif;
 .card{
     display:inline-flex;
     text-align: center;
-  
+    min-height: 560px;
+    margin: 10px;
+    margin-left: 20px;
+    min-height: 560px;
+        
     }
 
-    .but-Search{
-        background-color: white;
-        
-        }
+
+.height-img{
+height: 400px;
+
+}
+
+
+.but-Search{
+background-color: white;
+
+}
+
+
+#poster{
+    
+   padding-top: 50px;
+ }
