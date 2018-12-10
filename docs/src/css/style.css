@@ -11,10 +11,58 @@ padding-left: 20px;
 
 }
 
-#welcome{
-padding-left: 20px;
-    
+    .vistas{
+       
+        display: flex;
+         }
+        
+
+
+    @media only screen and (max-width: 1224px) { .vistas{
+      
+        flex-direction: column;
+        
+      padding-left: 10%;
+              }
+
+              .peli-mas{
+       margin-top: 3%;
+                      }
+
+
+            }
+
+
+            @media only screen and (min-width: 1023px) { .vistas{
+                
+                    display: flex;
+                  
+                
+                      }
+        
+                      .peli-mas{
+               margin-top: 3%;
+               margin-left: 7%;
+                              }
+        
+        
+                    }
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #singOut{
+        padding-left: 0px;
+            
+        }
 }
+
+
+#welcome{
+    padding-left: 20px;
+        
+    }
 
 
 #movies {
@@ -23,7 +71,8 @@ padding-left: 20px;
     height: 30px;
     color: white;
     width: 110px;
-  margin-top: 2px;
+  margin-bottom: 9px;
+  padding-left: 0px;
  }
 
 
@@ -42,6 +91,7 @@ max-width: 3000px;
 .navbartxt{
 color: white;
 font-family: 'Kosugi', sans-serif;
+                      
 }
 
 .card{

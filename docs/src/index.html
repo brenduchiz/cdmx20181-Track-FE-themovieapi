@@ -9,56 +9,60 @@
     <title>Document</title>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg nav ">
-        <img src="images/logoo.png" height="50" width="50" alt="">     <a class="navbartxt title"  href="#"> SUPERHEROES </a>
-         
-      
-        
+    <nav class="navbar navbar-expand-lg navbar-light nav">
+        <img src="images/logoo.png" height="50" width="50" alt=""> 
        
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <ul class="navbar-nav mr-auto">
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-white " href="#" id="welcome" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 Bienvenido
-                  </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto"> 
+              <li class="nav-item active">
+                  <select class="form-control button-select " id="movies">
+                      <option>Películas</option>
+                      <option>batman</option>
+                      <option>wonder woman</option>
+                      <option>superman</option>
+                      </select>
+                </li>
 
                
-
-                   <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="movies2">
-                   
-                    <a class="dropdown-item" href="#" id="singOut"  >Cerrar Sesión</a>
-                  </div>
-                </li> 
-              
-                <li class="nav-item active">
-                    <select class="form-control button-select " id="movies">
-                        <option>Películas</option>
-                        <option>batman</option>
-                        <option>wonder woman</option>
-                        <option>superman</option>
-                        </select>
-                  </li>
-           </ul>
-
-          
            
-           <div class="form-inline my-2 my-lg-0">
-             <input class="form-control mr-sm-2 but-Search" type="search" placeholder=""  id="Search" aria-label="Search">
-             <button class="btn btn-outline-dark my-2 my-sm-0 but-Search" id="button-Search" type="submit">Buscar</button>
-           </div>
-         </div>
-       </nav>
-
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+          <li class="nav-item">
+              <a class="nav-link disabled text-white" href="#" id="singOut">Cerrar Sesion</a>
+            </li>
+         
+        </div>
+      </nav>
+    
 
 <div class="container">
       
        
-             <div id="poster"></div>
-          
-        
-      </div>
+             <div id="poster">
+                
+<div class="row vistas">
 
+    <div class="peli-mas">
+<img src="images/vistas.jpeg" height="400" width="300" alt=""> 
+    </div>
+    <div class="peli-mas">
+<img src="images/ralp.jpg" height="400" width="300" alt=""> 
+    </div>
+
+    <div class="peli-mas">
+<img src="images/grinch.jpg" height="400" width="300" alt=""> 
+    </div>
+
+</div>               
+</div>
+</div>
 
 
 
