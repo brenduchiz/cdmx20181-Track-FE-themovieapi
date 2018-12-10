@@ -2,6 +2,11 @@
 
 ## Descripción
 
+
+![movie](https://user-images.githubusercontent.com/27248841/49709084-400f3600-fbf8-11e8-8d93-0a51f1b8acb5.png)
+
+
+
 Has decidido entrar a una startup que se relaciona con la industria cinematográfica. Tienes una entrevista técnica en dos días y por ello, decides 
 crear un blog para reforzar tu portafolio enfocado a este sector.
 
